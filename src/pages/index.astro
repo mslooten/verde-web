@@ -1,11 +1,243 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">Verde</a>
+      <nav aria-label="Hoofdnavigatie">
+        <ul class="nav-links">
+          <li><a href="#wandeltherapie">Wandeltherapie</a></li>
+          <li><a href="#werkwijze">Werkwijze</a></li>
+          <li><a href="#over-mij">Over mij</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="nav-btn">Plan een gesprek</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="eyebrow eyebrow-muted">Wandeltherapie Nijmegen</span>
+          <h1>Therapie<br/><em>die beweegt</em></h1>
+          <p>Stap voor stap werken aan je welzijn — in beweging, in de natuur, op jouw tempo.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-cream">Maak een afspraak</a>
+            <a href="#wandeltherapie" class="btn btn-ghost">Meer lezen</a>
+          </div>
+        </div>
+        <div class="hero-deco" aria-hidden="true">
+          <div class="deco-ring"></div>
+          <div class="deco-fill"></div>
+          <div class="deco-inner"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WANDELTHERAPIE -->
+    <section id="wandeltherapie" class="section bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-green">Wat is wandeltherapie?</span>
+          <h2>Gesprekken in beweging</h2>
+          <p class="section-lead">Wandeltherapie combineert professionele psychologische begeleiding met het helende effect van bewegen in de buitenlucht. In plaats van tegenover elkaar te zitten, lopen we samen — wat gesprekken opener en laagdrempeliger maakt.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+            </div>
+            <h3>Natuur als rustpunt</h3>
+            <p>Groen en buitenlucht werken kalmerend op het zenuwstelsel en verlagen aantoonbaar je stressniveau.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3>Bewegen bevrijdt</h3>
+            <p>Lichaamsbeweging stimuleert endorfines, vermindert spanning en helpt vastgelopen gedachten lostrekken.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Zij aan zij</h3>
+            <p>Naast elkaar lopen is minder confronterend dan oog-in-oog. Het bevordert openheid en eerlijkheid in het gesprek.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOORDELEN -->
+    <section class="section bg-pink">
+      <div class="container">
+        <div class="voordelen-layout">
+          <div class="voordelen-header">
+            <span class="eyebrow eyebrow-terra">Voordelen</span>
+            <h2>Waarom wandelen werkt</h2>
+            <p>Wetenschappelijk onderzoek toont aan dat bewegen in de natuur een krachtige aanvulling is op traditionele therapie.</p>
+          </div>
+          <div class="voordelen-grid">
+            <div class="voordeel">
+              <div class="voordeel-num">01</div>
+              <h3>Stressreductie</h3>
+              <p>Natuur verlaagt aantoonbaar cortisol en angstgevoelens, ook op de korte termijn.</p>
+            </div>
+            <div class="voordeel">
+              <div class="voordeel-num">02</div>
+              <h3>Helderheid van geest</h3>
+              <p>Het ritme van lopen helpt gedachten te ordenen en nieuwe inzichten te laten ontstaan.</p>
+            </div>
+            <div class="voordeel">
+              <div class="voordeel-num">03</div>
+              <h3>Grotere openheid</h3>
+              <p>De informele setting maakt het makkelijker om over moeilijke onderwerpen te praten.</p>
+            </div>
+            <div class="voordeel">
+              <div class="voordeel-num">04</div>
+              <h3>Zintuiglijke verankering</h3>
+              <p>Contact met de omgeving ondersteunt mindfulness en aanwezig zijn in het hier en nu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WERKWIJZE -->
+    <section id="werkwijze" class="section bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-green">Werkwijze</span>
+          <h2>Hoe het werkt</h2>
+          <p class="section-lead">Een traject begint altijd met een vrijblijvend gesprek. Van kennismaking tot afronding begeleid ik je stap voor stap.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3>Kennismakingsgesprek</h3>
+              <p>We beginnen met een gratis kennismakingsgesprek van 20 minuten — telefonisch of in persoon — om te verkennen of wandeltherapie bij jou en je hulpvraag past.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3>Intake & behandelplan</h3>
+              <p>Samen brengen we je hulpvraag in kaart en stellen we een persoonlijk behandelplan op met heldere doelen en een realistisch tijdpad.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3>Wandelsessies</h3>
+              <p>We lopen wekelijks 60 à 90 minuten samen in de natuur. Jij bepaalt het tempo. Ik begeleid het gesprek, luister, stel vragen en denk met je mee.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <h3>Evaluatie & afsluiting</h3>
+              <p>Regelmatig staan we stil bij je voortgang. We sluiten het traject af als je doelen behaald zijn — of sturen bij als de situatie daarom vraagt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-note">
+          <p><strong>Tarief:</strong> €95 per sessie van 75 minuten &nbsp;·&nbsp; Kennismakingsgesprek gratis &nbsp;·&nbsp; Mogelijk (deels) vergoed via aanvullende verzekering</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVER MIJ -->
+    <section id="over-mij" class="section bg-green">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-text">
+            <span class="eyebrow eyebrow-cream-muted">Over mij</span>
+            <h2>Roëlle Gevers</h2>
+            <p class="about-subtitle">GZ-psycholoog & wandeltherapeut</p>
+            <p>Ik ben Roëlle, een BIG-geregistreerd GZ-psycholoog met meer dan tien jaar ervaring in de geestelijke gezondheidszorg. Na jaren in de reguliere praktijk ontdekte ik de kracht van bewegen in de natuur als aanvulling op therapie.</p>
+            <p>Wandelen brengt iets losser in gesprekken — meer openheid, meer rust, meer echtheid. Sindsdien combineer ik de diepgang van psychologische begeleiding met de helende werking van de buitenlucht.</p>
+            <p>Ik begeleid mensen met uiteenlopende vragen: van stress, burn-out en angst tot rouw, relatieproblemen en existentiële levensvragen.</p>
+            <a href="#contact" class="btn btn-cream" style="margin-top: 1.75rem; display: inline-block;">Neem contact op</a>
+          </div>
+          <div class="cred-card">
+            <ul class="cred-list">
+              <li>GZ-psycholoog, BIG-geregistreerd</li>
+              <li>Lid van het NIP</li>
+              <li>Gecertificeerd wandeltherapeut</li>
+              <li>Cognitieve gedragstherapie (CGT)</li>
+              <li>Acceptance & Commitment Therapy (ACT)</li>
+              <li>10+ jaar klinische ervaring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-terra">Contact</span>
+          <h2>Een eerste stap zetten</h2>
+          <p class="section-lead">Nieuwsgierig of wandeltherapie iets voor jou is? Bel of mail voor een vrijblijvend kennismakingsgesprek.</p>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:info@psychologiepraktijkverde.nl">info@psychologiepraktijkverde.nl</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Telefoon</span>
+            <a href="tel:+31643747288">06 43 74 72 88</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Locatie</span>
+            <span>Nijmegen & omstreken</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Vergoeding</span>
+            <span>(Deels) mogelijk via aanvullende verzekering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo logo-light">Verde</span>
+          <p>Wandeltherapie & psychologische begeleiding</p>
+        </div>
+        <nav aria-label="Footernavigatie" class="footer-nav">
+          <a href="#wandeltherapie">Wandeltherapie</a>
+          <a href="#werkwijze">Werkwijze</a>
+          <a href="#over-mij">Over mij</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Psychologiepraktijk Verde &nbsp;·&nbsp; KvK 99502305 &nbsp;·&nbsp; BIG-registratie 99929965225 &nbsp;·&nbsp; AGB code praktijk 94069730 &nbsp;·&nbsp; BTW ID NL005390554B25</p>
+        <p>Alle verstrekte informatie is vertrouwelijk en valt onder het beroepsgeheim.</p>
+      </div>
+    </div>
+  </footer>
 </Layout>
