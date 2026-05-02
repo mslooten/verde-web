@@ -8,7 +8,7 @@ import verdeLeaf from '../assets/verde leaf.svg';
   <header class="nav">
     <div class="nav-inner">
       <a href="/" class="logo">Verde</a>
-      <nav aria-label="Hoofdnavigatie">
+      <nav aria-label="Hoofdnavigatie" id="main-nav">
         <ul class="nav-links">
           <li><a href="#wandeltherapie">Wandeltherapie</a></li>
           <li><a href="#werkwijze">Werkwijze</a></li>
@@ -17,8 +17,29 @@ import verdeLeaf from '../assets/verde leaf.svg';
         </ul>
       </nav>
       <a href="#contact" class="nav-btn">Plan een gesprek</a>
+      <button class="nav-hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <script>
+    const btn = document.querySelector('.nav-hamburger') as HTMLButtonElement;
+    const header = btn.closest('.nav') as HTMLElement;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.classList.toggle('is-open', !open);
+      header.classList.toggle('nav--open', !open);
+    });
+    header.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.classList.remove('is-open');
+        header.classList.remove('nav--open');
+      });
+    });
+  </script>
 
   <main>
     <!-- HERO -->
@@ -179,7 +200,6 @@ import verdeLeaf from '../assets/verde leaf.svg';
               <li>GZ-psycholoog, BIG-geregistreerd</li>
               <li>Gecertificeerd buitenpsycholoog</li>
               <li>CGT · ACT · EMDR · Schematherapie</li>
-              <li>Werkzaam als psycholoog sinds 2016</li>
               <li>10 jaar ervaring als psycholoog</li>
             </ul>
           </div>
@@ -223,7 +243,7 @@ import verdeLeaf from '../assets/verde leaf.svg';
       <div class="footer-inner">
         <div class="footer-brand">
           <span class="logo logo-light">Verde</span>
-          <p>Wandeltherapie & psychologische begeleiding</p>
+          <p>Wandeltherapie</p>
         </div>
         <nav aria-label="Footernavigatie" class="footer-nav">
           <a href="#wandeltherapie">Wandeltherapie</a>
