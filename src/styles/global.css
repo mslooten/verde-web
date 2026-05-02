@@ -258,44 +258,25 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* Decorative circles */
+/* Decorative leaf */
 .hero-deco {
   position: absolute;
-  right: 0;
+  right: 2rem;
   top: 0;
-  width: 55%;
+  width: 50%;
   height: 100%;
   pointer-events: none;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-.deco-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgba(233, 225, 203, 0.1);
-  width: 580px;
-  height: 580px;
-  right: -120px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.deco-fill {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(114, 137, 90, 0.22);
-  width: 420px;
-  height: 420px;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-58%);
-}
-.deco-inner {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(114, 137, 90, 0.14);
-  width: 260px;
-  height: 260px;
-  right: 120px;
-  bottom: 12%;
+.hero-leaf {
+  width: 72%;
+  max-width: 300px;
+  height: auto;
+  opacity: 0.1;
+  filter: brightness(0) invert(1);
 }
 
 /* ─── Feature cards (wandeltherapie) ────────── */
@@ -481,8 +462,6 @@ h3 {
   gap: 2.5rem 4rem;
   justify-content: center;
 }
-.contact-item {
-}
 .contact-label {
   display: block;
   font-size: 0.75rem;
@@ -550,9 +529,6 @@ h3 {
 
 /* ─── Responsive ─────────────────────────────── */
 @media (max-width: 1024px) {
-  .hero-deco {
-    display: none;
-  }
   .about-layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -567,6 +543,9 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .hero-deco {
+    display: none;
+  }
   .section {
     padding: 4rem 0;
   }

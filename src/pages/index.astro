@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import verdeLeaf from '../assets/verde leaf.svg';
 ---
 
 <Layout>
@@ -26,16 +27,14 @@ import Layout from '../layouts/Layout.astro';
         <div class="hero-text">
           <span class="eyebrow eyebrow-muted">Wandeltherapie Nijmegen</span>
           <h1>Therapie<br/><em>die beweegt</em></h1>
-          <p>Stap voor stap werken aan je welzijn — in beweging, in de natuur, op jouw tempo.</p>
+          <p>Stap voor stap werken aan je welzijn – in beweging, in de natuur, op jouw tempo.</p>
           <div class="hero-ctas">
             <a href="#contact" class="btn btn-cream">Maak een afspraak</a>
             <a href="#wandeltherapie" class="btn btn-ghost">Meer lezen</a>
           </div>
         </div>
         <div class="hero-deco" aria-hidden="true">
-          <div class="deco-ring"></div>
-          <div class="deco-fill"></div>
-          <div class="deco-inner"></div>
+          <img src={verdeLeaf.src} alt="" class="hero-leaf" />
         </div>
       </div>
     </section>
@@ -46,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="section-header">
           <span class="eyebrow eyebrow-green">Wat is wandeltherapie?</span>
           <h2>Gesprekken in beweging</h2>
-          <p class="section-lead">Wandeltherapie combineert professionele psychologische begeleiding met het helende effect van bewegen in de buitenlucht. In plaats van tegenover elkaar te zitten, lopen we samen — wat gesprekken opener en laagdrempeliger maakt.</p>
+          <p class="section-lead">Ik merk steeds weer dat gesprekken anders verlopen als we naast elkaar wandelen in plaats van tegenover elkaar zitten. Buiten valt er iets weg – de druk, het gevoel dat je het goed moet doen. De natuur en beweging doen ondertussen hun eigen werk.</p>
         </div>
         <div class="cards">
           <div class="card">
@@ -56,8 +55,8 @@ import Layout from '../layouts/Layout.astro';
                 <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
               </svg>
             </div>
-            <h3>Natuur als rustpunt</h3>
-            <p>Groen en buitenlucht werken kalmerend op het zenuwstelsel en verlagen aantoonbaar je stressniveau.</p>
+            <h3>Naast elkaar praten</h3>
+            <p>Gesprekken verlopen vanzelf soepeler als we naast elkaar wandelen in plaats van tegenover elkaar zitten. De druk valt weg en stiltes mogen er gewoon zijn.</p>
           </div>
           <div class="card">
             <div class="card-icon">
@@ -65,8 +64,8 @@ import Layout from '../layouts/Layout.astro';
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
               </svg>
             </div>
-            <h3>Bewegen bevrijdt</h3>
-            <p>Lichaamsbeweging stimuleert endorfines, vermindert spanning en helpt vastgelopen gedachten lostrekken.</p>
+            <h3>Uit je hoofd, in je lijf</h3>
+            <p>Wandelen helpt je om uit je hoofd te komen en meer te voelen wat er speelt. Spanning zakt sneller en gedachten worden helderder.</p>
           </div>
           <div class="card">
             <div class="card-icon">
@@ -76,8 +75,8 @@ import Layout from '../layouts/Layout.astro';
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
             </div>
-            <h3>Zij aan zij</h3>
-            <p>Naast elkaar lopen is minder confronterend dan oog-in-oog. Het bevordert openheid en eerlijkheid in het gesprek.</p>
+            <h3>Toegankelijk en veilig</h3>
+            <p>Buitenpsychologie is niet zweverig en ook niet sportief. We lopen op een rustig tempo, op een plek waar jij je prettig en veilig voelt. Het gesprek staat centraal – de wandeling ondersteunt.</p>
           </div>
         </div>
       </div>
@@ -89,29 +88,29 @@ import Layout from '../layouts/Layout.astro';
         <div class="voordelen-layout">
           <div class="voordelen-header">
             <span class="eyebrow eyebrow-terra">Voordelen</span>
-            <h2>Waarom wandelen werkt</h2>
-            <p>Wetenschappelijk onderzoek toont aan dat bewegen in de natuur een krachtige aanvulling is op traditionele therapie.</p>
+            <h2>Waarom buiten?</h2>
+            <p>Bewegen in de natuur heeft aantoonbaar effect op je welzijn – en gesprekken verlopen buiten gewoon anders. Wandeltherapie heeft inmiddels ruimschoots zijn effectiviteit bewezen.</p>
           </div>
           <div class="voordelen-grid">
             <div class="voordeel">
               <div class="voordeel-num">01</div>
-              <h3>Stressreductie</h3>
-              <p>Natuur verlaagt aantoonbaar cortisol en angstgevoelens, ook op de korte termijn.</p>
+              <h3>Minder stress</h3>
+              <p>Buiten bewegen verlaagt de aanmaak van stresshormonen en stimuleert gelukshormonen. Je voelt je na een sessie direct beter.</p>
             </div>
             <div class="voordeel">
               <div class="voordeel-num">02</div>
-              <h3>Helderheid van geest</h3>
-              <p>Het ritme van lopen helpt gedachten te ordenen en nieuwe inzichten te laten ontstaan.</p>
+              <h3>Meer energie & focus</h3>
+              <p>Natuur heeft een positief effect op je energieniveau, creativiteit, concentratie, slaap en lichamelijke ontspanning.</p>
             </div>
             <div class="voordeel">
               <div class="voordeel-num">03</div>
-              <h3>Grotere openheid</h3>
-              <p>De informele setting maakt het makkelijker om over moeilijke onderwerpen te praten.</p>
+              <h3>Makkelijker praten</h3>
+              <p>Naast elkaar lopen verlaagt de drempel om over moeilijke dingen te praten. Het gevoel dat je het 'goed moet doen' verdwijnt.</p>
             </div>
             <div class="voordeel">
               <div class="voordeel-num">04</div>
-              <h3>Zintuiglijke verankering</h3>
-              <p>Contact met de omgeving ondersteunt mindfulness en aanwezig zijn in het hier en nu.</p>
+              <h3>Dichter bij jezelf</h3>
+              <p>Beweging helpt je om uit je hoofd te komen en contact te maken met je eigen gevoelens en lijf – meer in het hier en nu.</p>
             </div>
           </div>
         </div>
@@ -130,34 +129,34 @@ import Layout from '../layouts/Layout.astro';
           <div class="step">
             <div class="step-num">01</div>
             <div class="step-body">
-              <h3>Kennismakingsgesprek</h3>
-              <p>We beginnen met een gratis kennismakingsgesprek van 20 minuten — telefonisch of in persoon — om te verkennen of wandeltherapie bij jou en je hulpvraag past.</p>
+              <h3>Aanmelding & kennismaking</h3>
+              <p>Meld je aan via het contactformulier of per mail. Ik neem binnen 5 werkdagen contact op voor een kosteloos telefonisch kennismakingsgesprek, waarin we samen verkennen of wandeltherapie bij jou en je hulpvraag past.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">02</div>
             <div class="step-body">
-              <h3>Intake & behandelplan</h3>
-              <p>Samen brengen we je hulpvraag in kaart en stellen we een persoonlijk behandelplan op met heldere doelen en een realistisch tijdpad.</p>
+              <h3>Intake</h3>
+              <p>De behandeling begint met een intake van 60 tot 90 minuten, doorgaans via beeldbellen. We verkennen je klachten, onderzoeken waar ze vandaan komen en stellen samen een behandelplan op met heldere doelen.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">03</div>
             <div class="step-body">
               <h3>Wandelsessies</h3>
-              <p>We lopen wekelijks 60 à 90 minuten samen in de natuur. Jij bepaalt het tempo. Ik begeleid het gesprek, luister, stel vragen en denk met je mee.</p>
+              <p>De behandelsessies vinden buiten plaats, rondom Nijmegen en Lent – in een rustig tempo, op een plek waar jij je prettig en veilig voelt. Het gesprek staat centraal, de wandeling ondersteunt.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">04</div>
             <div class="step-body">
               <h3>Evaluatie & afsluiting</h3>
-              <p>Regelmatig staan we stil bij je voortgang. We sluiten het traject af als je doelen behaald zijn — of sturen bij als de situatie daarom vraagt.</p>
+              <p>Gedurende het traject evalueren we regelmatig de voortgang. We sluiten af wanneer je doelen behaald zijn – of sturen bij als de situatie daarom vraagt.</p>
             </div>
           </div>
         </div>
         <div class="pricing-note">
-          <p><strong>Tarief:</strong> €95 per sessie van 75 minuten &nbsp;·&nbsp; Kennismakingsgesprek gratis &nbsp;·&nbsp; Mogelijk (deels) vergoed via aanvullende verzekering</p>
+          <p><strong>Intake:</strong> €245,04 per 75 min &nbsp;·&nbsp; <strong>Behandeling:</strong> €177,89 per 60 min &nbsp;·&nbsp; Kennismakingsgesprek gratis &nbsp;·&nbsp; Mogelijk (deels) vergoed via basisverzekering (met verwijsbrief)</p>
         </div>
       </div>
     </section>
@@ -170,19 +169,18 @@ import Layout from '../layouts/Layout.astro';
             <span class="eyebrow eyebrow-cream-muted">Over mij</span>
             <h2>Roëlle Gevers</h2>
             <p class="about-subtitle">GZ-psycholoog & wandeltherapeut</p>
-            <p>Ik ben Roëlle, een BIG-geregistreerd GZ-psycholoog met meer dan tien jaar ervaring in de geestelijke gezondheidszorg. Na jaren in de reguliere praktijk ontdekte ik de kracht van bewegen in de natuur als aanvulling op therapie.</p>
-            <p>Wandelen brengt iets losser in gesprekken — meer openheid, meer rust, meer echtheid. Sindsdien combineer ik de diepgang van psychologische begeleiding met de helende werking van de buitenlucht.</p>
-            <p>Ik begeleid mensen met uiteenlopende vragen: van stress, burn-out en angst tot rouw, relatieproblemen en existentiële levensvragen.</p>
+            <p>Mijn naam is Roëlle Gevers, woonachtig in Lent. Ik ben eigenaar van Psychologiepraktijk Verde en werk naast mijn eigen praktijk ook bij een kleinschalige BGGZ-praktijk in Nijmegen. Ik werk als psycholoog sinds 2016 en behaalde in 2021 mijn BIG-registratie als GZ-psycholoog.</p>
+            <p>Het idee voor Verde groeide nadat ik zelf ervaarde hoe krachtig een wandelend gesprek buiten in de natuur kan zijn. In 2023 volgde ik een opleiding buitenpsychologie en was meteen verkocht: alles wat binnen kan, kan ook buiten – en soms werkt het beter. Zo ontstond Verde, wat ook letterlijk 'groen' betekent.</p>
+            <p>In sessies ben ik open, nieuwsgierig en echt luisterend. Humor en luchtigheid zijn voor mij net zo belangrijk als de ernst van wat er besproken wordt. Ik werk met CGT, ACT, EMDR en schematherapie – altijd met jouw hulpvraag en eigen regie als uitgangspunt.</p>
             <a href="#contact" class="btn btn-cream" style="margin-top: 1.75rem; display: inline-block;">Neem contact op</a>
           </div>
           <div class="cred-card">
             <ul class="cred-list">
               <li>GZ-psycholoog, BIG-geregistreerd</li>
-              <li>Lid van het NIP</li>
-              <li>Gecertificeerd wandeltherapeut</li>
-              <li>Cognitieve gedragstherapie (CGT)</li>
-              <li>Acceptance & Commitment Therapy (ACT)</li>
-              <li>10+ jaar klinische ervaring</li>
+              <li>Gecertificeerd buitenpsycholoog</li>
+              <li>CGT · ACT · EMDR · Schematherapie</li>
+              <li>Werkzaam als psycholoog sinds 2016</li>
+              <li>10 jaar ervaring als psycholoog</li>
             </ul>
           </div>
         </div>
